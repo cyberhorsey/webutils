@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/cyberhorsey/errors"
-	jwt "github.com/dgrijalva/jwt-go"
+	jwt "github.com/golang-jwt/jwt/v4"
 	echo "github.com/labstack/echo/v4"
 )
 
