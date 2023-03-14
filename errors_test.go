@@ -306,7 +306,7 @@ func TestRenderErrors_Single(t *testing.T) {
 		{
 			"key":"ERR_UNEXPECTED",
 			"title":"Internal Server Error",
-			"detail":"An unexpected error occurred. If the problem persists, please contact support@gamestop.com."
+			"detail":"An unexpected error occurred."
 		}
 	]
 }`),
@@ -320,7 +320,7 @@ func TestRenderErrors_Single(t *testing.T) {
 		{
 			"key":"ERR_UNEXPECTED",
 			"title":"Internal Server Error",
-			"detail":"An unexpected error occurred. If the problem persists, please contact support@gamestop.com."
+			"detail":"An unexpected error occurred."
 		}
 	]
 }`),
@@ -397,7 +397,7 @@ func TestRenderUnexpectedError(t *testing.T) {
 	assert.Equal(
 		t,
 		"ERR_UNEXPECTED: Internal Server Error: "+
-			"An unexpected error occurred. If the problem persists, please contact support@gamestop.com.",
+			"An unexpected error occurred.",
 		resp.Error(),
 	)
 }

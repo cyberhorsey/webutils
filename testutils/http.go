@@ -95,7 +95,7 @@ func generateSignedJWT(accountID, userID uint, privateKey *rsa.PrivateKey) strin
 			UserID:   userID,
 			Type:     "access",
 			StandardClaims: jwt.StandardClaims{
-				Issuer:    "gamestop",
+				Issuer:    "cyberhorsey",
 				IssuedAt:  time.Now().Unix(),
 				ExpiresAt: time.Now().Add(24 * time.Hour).Unix(),
 				NotBefore: time.Now().Unix(),

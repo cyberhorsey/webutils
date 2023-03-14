@@ -153,7 +153,7 @@ func newUnexpectedError(err error) Error {
 		Cause:  err,
 		Key:    "ERR_UNEXPECTED",
 		Title:  http.StatusText(http.StatusInternalServerError),
-		Detail: "An unexpected error occurred. If the problem persists, please contact support@gamestop.com.",
+		Detail: "An unexpected error occurred.",
 	}
 }
 
